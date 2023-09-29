@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --gray: #c0c0c0;
+    --red: #d00000;
+    --dark-red: #9d0208;
+    --dark: #02020b;
+    --white: #ffffff;
+    --blue: #064789;
+    --bluesky: #427AA1;
+    --lite-blue: #669bbc;
+    --green: #679436;
+    --lite-green: #A5BE00;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--lite-blue);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 0;
+}
+
+/* Code for Firefox */
+::-moz-selection {
+    color: var(--white);
+    background: var(--blue);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--blue);
+}
+
+html {
+    background-color: var(--white);
+}
+
+body {
+    height: 100vh;
+    background-image: url("../../public/assets/bg.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+*, html {
+    font-family: "DM Sans", sans-serif;
+}
